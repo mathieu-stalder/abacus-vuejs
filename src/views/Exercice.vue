@@ -5,27 +5,19 @@
     </div>
     <h1>Exercice</h1>
     <ul id="example-1">
-</ul>
-    <table>
-      <thead>
-        <tr>
-          <th>Tâches</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+    </ul>
+    <liste :itemsProp="items" /> 
   </div>
 </template>
 
 <script>
+import Liste from "@/views/Liste.vue";
+
 export default {
   name: "Home",
+  components: {
+        Liste
+  },
   data() {
     return{
       items: [
